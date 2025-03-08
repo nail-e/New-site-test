@@ -1,13 +1,10 @@
 ---
 layout: about
-permalink: /about/
 ---
 
-Hi, I'm Elian (or Eli as some of you know me). I'm a Computer Engineer and an Assistant Researcher at Purdue University and this is the place I collate my thoughts about my hobbies and doings.
+These are controlled by `about.md` under the root directory. If you want a more diverse self-introduction, you can insert the markdown content you want here.
 
 ### What's New
 
-- Oct '24: Assistant Researcher @ Purdue RCAC
-- Sep '24: Started BCmpE Computer Engineering @ Purdue ECE
-- Jun '24: Graduated High School!
-- Jan '23: Site up!
+- One paper got accepted in xxx 2019.
+- I'm going to join xxx as a xxx 2019 Fall.
