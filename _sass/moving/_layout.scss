@@ -1,3 +1,4 @@
+@use 'sass:math';
 /**
  * Site header
  */
@@ -14,7 +15,7 @@
 .site-nav {
   position: absolute;
   top: 9px;
-  right: $spacing-unit / 2;
+  right: calc($spacing-unit / 2);
   background-color: $background-color;
   border: 1px solid $grey-color-light;
   border-radius: 5px;
@@ -103,12 +104,12 @@
  * Site footer
  */
 .site-footer {
-  padding: $spacing-unit / 1.5 0;
+  padding: calc(spacing-unit / 1.5) 0;
 }
 
 .footer-heading {
   @include relative-font-size(1.125);
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: calc($spacing-unit / 2);
 }
 
 .p-name {
@@ -174,7 +175,7 @@
   list-style: none;
 
   li {
-    margin-bottom: $spacing-unit / 12;
+    margin-bottom: calc(spacing-unit / 12);
   }
 }
 
@@ -288,7 +289,7 @@
   li {
     float: left;
     a {
-      padding-right: $spacing-unit / 5;
+      padding-right: calc($spacing-unit / 5);
     }
   }
 }
