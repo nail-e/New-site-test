@@ -1,18 +1,21 @@
 /*!
- * Agate by Taufik Nurrohman <https://github.com/tovic>
+ * Gruvbox Theme for Code Highlighting
+ * Adapted from Agate by Taufik Nurrohman <https://github.com/tovic>
  * ----------------------------------------------------
  *
- * #ade5fc
- * #a2fca2
- * #c6b4f0
- * #d36363
- * #fcc28c
- * #fc9b9b
- * #ffa
- * #fff
- * #333
- * #62c8f3
- * #888
+ * Gruvbox Colors:
+ * #282828 - Background
+ * #ebdbb2 - Foreground (Text)
+ * #cc241d - Red
+ * #98971a - Green
+ * #d79921 - Yellow
+ * #458588 - Blue
+ * #b16286 - Purple
+ * #689d6a - Aqua
+ * #fabd2f - Orange
+ * #928374 - Grey (Comments)
+ * #fbf1c7 - Light Yellow
+ * #3c3836 - Darker Background
  *
  */
 
@@ -20,8 +23,8 @@
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #333;
-  color: white;
+  background: #282828; /* Gruvbox Dark Background */
+  color: #ebdbb2; /* Foreground Text */
 }
 
 .hljs-name,
@@ -35,19 +38,19 @@
 }
 
 .hljs-tag {
-  color: #62c8f3;
+  color: #fabd2f; /* Orange */
 }
 
 .hljs-variable,
 .hljs-template-variable,
 .hljs-selector-id,
 .hljs-selector-class {
-  color: #ade5fc;
+  color: #d79921; /* Yellow */
 }
 
 .hljs-string,
 .hljs-bullet {
-  color: #a2fca2;
+  color: #98971a; /* Green */
 }
 
 .hljs-type,
@@ -57,44 +60,44 @@
 .hljs-quote,
 .hljs-built_in,
 .hljs-builtin-name {
-  color: #ffa;
+  color: #fbf1c7; /* Light Yellow */
 }
 
 .hljs-number,
 .hljs-symbol,
 .hljs-bullet {
-  color: #d36363;
+  color: #cc241d; /* Red */
 }
 
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-literal {
-  color: #fcc28c;
+  color: #fabd2f; /* Orange */
 }
 
 .hljs-comment,
 .hljs-deletion,
 .hljs-code {
-  color: #888;
+  color: #928374; /* Grey */
 }
 
 .hljs-regexp,
 .hljs-link {
-  color: #c6b4f0;
+  color: #b16286; /* Purple */
 }
 
 .hljs-meta {
-  color: #fc9b9b;
+  color: #689d6a; /* Aqua */
 }
 
 .hljs-deletion {
-  background-color: #fc9b9b;
-  color: #333;
+  background-color: #cc241d; /* Red Background */
+  color: #282828; /* Dark Foreground */
 }
 
 .hljs-addition {
-  background-color: #a2fca2;
-  color: #333;
+  background-color: #98971a; /* Green Background */
+  color: #282828; /* Dark Foreground */
 }
 
 .hljs a {
@@ -106,3 +109,4 @@
   color: inherit;
   text-decoration: underline;
 }
+
