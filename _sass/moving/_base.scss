@@ -1,4 +1,3 @@
-@use 'sass:math';
 /**
  * Reset some basic elements
  */
@@ -65,7 +64,7 @@ ol,
 dl,
 figure,
 %vertical-rhythm {
-  margin-bottom: math.div($spacing-unit, 2);
+  margin-bottom: $spacing-unit / 2;
 }
 
 /**
@@ -167,7 +166,7 @@ a {
 blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
-  padding-left: math.div($spacing-unit, 2);
+  padding-left: $spacing-unit / 2;
   @include relative-font-size(1);
   letter-spacing: -1px;
 
@@ -186,9 +185,9 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9);
-  border: 1px solid darken(#282828, 3%);
+  border: 1px solid darken($grey-color-light, 3%);
   border-radius: 3px;
-  background-color: lighten(#282828, 3%);
+  background-color: lighten($grey-color-light, 3%);
 }
 
 code {
@@ -214,8 +213,8 @@ pre {
   max-width: calc(#{$content-width} - (#{$spacing-unit}));
   margin-right: auto;
   margin-left: auto;
-  padding-right: math.div($spacing-unit, 2);
-  padding-left: math.div($spacing-unit, 2);
+  padding-right: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
   @extend %clearfix;
 
   @media screen and (min-width: $on-large) {
@@ -263,20 +262,20 @@ table {
   margin-bottom: $spacing-unit;
   width: 100%;
   text-align: $table-text-align;
-  color: #ebdbb2;
+  color: lighten($text-color, 18%);
   border-collapse: collapse;
   border: 1px solid $grey-color-light;
   tr {
     &:nth-child(even) {
-      background-color: lighten(#282828, 6%);
+      background-color: lighten($grey-color-light, 6%);
     }
   }
   th,
   td {
-    padding: (math.div($spacing-unit, 3)) (math.div($spacing-unit, 2));
+    padding: ($spacing-unit / 3) ($spacing-unit / 2);
   }
   th {
-    background-color: lighten(#282828, 3%);
+    background-color: lighten($grey-color-light, 3%);
     border: 1px solid darken($grey-color-light, 4%);
     border-bottom-color: darken($grey-color-light, 12%);
   }
